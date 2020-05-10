@@ -153,8 +153,8 @@ function emailto(){
     var emailTo = "simon_zeidan@hotmail.com";
     var emailsub = document.getElementById("form_subject").value;
     var emailbody = document.getElementById("form_message").value;
-   
-    window.open("mailto:"+emailTo+'?subject='+emailsub+'&body='+emailbody);       
+    if(emailsub != ""&&emailbody !="")
+    	window.open("mailto:"+emailTo+'?subject='+emailsub+'&body='+emailbody);       
        
 
 }
